@@ -12,6 +12,7 @@ Separately, you have the opportunity to indicate to what category the posts of y
 
 A number of explanation on work with Xpath. Conditionally you have a supposed one you have a source of articles with https://website.com/articles where is approximately the next List of Articles
 
+```
 <div id="articles_list">
 	<ul>
 		<li class="list_item">
@@ -21,14 +22,17 @@ A number of explanation on work with Xpath. Conditionally you have a supposed on
 		..............
 	</ul>
 </div>
+```
 In this case, XPath for our references on articles will
-
+```
 //*[@id='articles_list']//*[contains(@class, 'title')]//a
+```
 To indicate the title of the article is enough to simply specify the title tag
-
+```
 //h1
+```
 For the body of the article is about the same if we have a source of such a source
-
+```
 <div id="content">
 	<div class="container">
 		<div class="article_body">
@@ -36,6 +40,8 @@ For the body of the article is about the same if we have a source of such a sour
 		</div>
 	</div>
 </div>
+```
 then for the body of the article you can specify such a way
-
+```
 //*[@id='content']//*[contains(@class, 'article_body')]
+```
